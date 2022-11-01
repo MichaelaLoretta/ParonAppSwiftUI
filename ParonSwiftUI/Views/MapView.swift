@@ -12,45 +12,46 @@ struct MapView: View {
     
     var body: some View {
         
-        ZStack(alignment: .center) {
-            
-            //-----------BACKGROUND----------
-            
-            LinearGradient(colors: [.black, Color(rgbPink)], startPoint: .topLeading, endPoint: .bottomTrailing)
-                .ignoresSafeArea()
-            
-          
-            
-            VStack{
+        NavigationView {
+            ZStack(alignment: .center) {
                 
-                HStack{
-                    Header()
+                
+                LinearGradient(colors: [.white, Color(rgbPink)], startPoint: .topLeading, endPoint: .bottomTrailing)
+                    .ignoresSafeArea()
+                
+              
+                
+                VStack{
+                    
+                    HStack{
+                        Header()
+                        Spacer()
+                        Image(systemName: "heart")
+                            .font(.system(size: 30))
+                        
+                    }.padding(.horizontal, 15)
+                   
+
+                   
                     Spacer()
-                    Image(systemName: "heart")
-                        .font(.system(size: 30))
                     
-                }.padding(.horizontal, 15)
-               
-
-               
-                Spacer()
-                
-                MapCircle()
-                
-                
-                Spacer()
-                
-                
-                BottomMenu()
-                
-
+                    MapCircle()
                     
+                    
+                    Spacer()
+                    
+                    
+                    BottomMenu()
+                    
+
+                        
+                    
+                }.padding(.horizontal, 5)
+                    
+                
                 
             }
-                
-            
-            
-        }
+        }.navigationViewStyle(StackNavigationViewStyle())
         
         
         

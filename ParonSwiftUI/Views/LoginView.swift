@@ -10,35 +10,46 @@ import SwiftUI
 struct LoginView: View {
     
     
-    
     var body: some View {
         
-        ZStack(alignment: .center) {
-            LinearGradient(colors: [.white, Color(rgbPink)], startPoint: .topLeading, endPoint: .bottomTrailing)
-                .ignoresSafeArea()
-            
-           VStack {
-               HStack{
-                   Header()
-                   Spacer()
-                   Image(systemName: "questionmark")
-                       .font(.system(size: 30))
+        NavigationView {
+            ZStack(alignment: .center) {
+                LinearGradient(colors: [.white, Color(rgbPink)], startPoint: .topLeading, endPoint: .bottomTrailing)
+                    .ignoresSafeArea()
+                
+               VStack {
+                   HStack{
+                       Header()
+                       Spacer()
+                       Image(systemName: "questionmark")
+                           .font(.system(size: 30))
+                       
+                   }.padding(.horizontal, 15)
                    
-               }.padding(.horizontal, 15)
-               
-               Spacer()
-                
-               LoginForm()
-               
-               Spacer()
-                
+                   Spacer()
+                   Text("WELCOME IN!")
+                       .fontWeight(.bold)
+                       .font(.system(size: 25, weight: .black, design: .rounded))
+                       .padding(.vertical)
+                       .foregroundColor(Color(rgbDarkGreen))
+                   Spacer()
+                    
+                   LoginForm()
+                   
+                   
+                   Spacer()
+                    
+                    
+                }
                 
             }
-            
-        }}}
+        }.navigationViewStyle(StackNavigationViewStyle())
+        
+    }}
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
         LoginView()
+        
     }
 }

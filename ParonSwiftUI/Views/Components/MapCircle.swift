@@ -6,16 +6,22 @@
 //
 
 import SwiftUI
+import MapKit
 
 struct MapCircle: View {
     
  
     
     var body: some View {
-        Circle()
-            .stroke(lineWidth: 5)
-            .frame(width: 370)
-            .foregroundColor(Color(rgbPink))
+        
+        
+       MapViewRepresentable()
+            .clipShape(Circle())
+        
+//        Circle()
+//            .stroke(lineWidth: 5)
+//            .frame(width: 370)
+//            .foregroundColor(Color(rgbPink))
             
     }
 }
