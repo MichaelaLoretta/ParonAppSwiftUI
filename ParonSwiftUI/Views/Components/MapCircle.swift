@@ -9,22 +9,20 @@ import SwiftUI
 import MapKit
 
 struct MapCircle: View {
-    
- 
-    
-    var body: some View {
+
+     
         
-        
-       MapViewRepresentable()
-            .clipShape(Circle())
-        
-//        Circle()
-//            .stroke(lineWidth: 5)
-//            .frame(width: 370)
-//            .foregroundColor(Color(rgbPink))
+        var body: some View {
             
+            
+           MapView()
+                .clipShape(Circle())
+            
+
+                
+        }
     }
-}
+
 
 struct MapCircle_Previews: PreviewProvider {
     static var previews: some View {

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Header: View {
     
-    
+    @EnvironmentObject var dbConnection: FirebaseManager
     
     var body: some View {
         

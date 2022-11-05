@@ -1,74 +1,59 @@
 //
-//  ContentView.swift
+//  MapViewRepresentable.swift
 //  ParonSwiftUI
 //
-//  Created by Michaela Beyer on 2022-10-27.
+//  Created by Michaela Beyer on 2022-11-01.
 //
 
 import SwiftUI
+import MapKit
 
-struct MapView: View {
+struct MapView: UIViewRepresentable {
     
+    let mapView = MKMapView()
+    let locationManager = LocationManager()
     
-    var body: some View {
+    func makeUIView(context: Context) -> some UIView {
+        mapView.delegate = context.coordinator
+        mapView.isRotateEnabled = false
+        mapView.showsUserLocation = true
+        mapView.userTrackingMode = .follow
+        return mapView
         
-        NavigationView {
-            ZStack(alignment: .center) {
-                
-                
-                LinearGradient(colors: [.white, Color(rgbPink)], startPoint: .topLeading, endPoint: .bottomTrailing)
-                    .ignoresSafeArea()
-                
-              
-                
-                VStack{
-                    
-                    HStack{
-                        Header()
-                        Spacer()
-                        Image(systemName: "heart")
-                            .font(.system(size: 30))
-                        
-                    }.padding(.horizontal, 15)
-                   
-
-                   
-                    Spacer()
-                    
-                    MapCircle()
-                    
-                    
-                    Spacer()
-                    
-                    
-                    BottomMenu()
-                    
-
-                        
-                    
-                }.padding(.horizontal, 5)
-                    
-                
-                
-            }
-        }.navigationViewStyle(StackNavigationViewStyle())
-        
-        
-        
-        
-      
+    }
+    
+    func updateUIView(_ uiView: UIViewType, context: Context) {
+        //code
+    }
+    
+    func makeCoordinator() -> MapCoordinator {
+        return MapCoordinator(parent:self)
     }
     
     
     
-   
-    
 }
 
+extension MapView {
     
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        MapView()
+    class MapCoordinator: NSObject, MKMapViewDelegate {
+        
+        let parent: MapView
+        
+        init(parent: MapView){
+            self.parent = parent
+            super.init()
+        }
+        
+        func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation) {
+            let region = MKCoordinateRegion(
+                center: CLLocationCoordinate2D(latitude: userLocation.coordinate.latitude, longitude: userLocation.coordinate.longitude),
+                span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
+            )
+            
+            parent.mapView.setRegion(region, animated: true)
+        }
+        
+       
     }
 }

@@ -7,6 +7,8 @@
 
 import CoreLocation
 
+//Denna kollar användarens position samt frågar om lov.
+
 class LocationManager: NSObject, ObservableObject {
     
    private let locationManager = CLLocationManager()
@@ -15,7 +17,7 @@ class LocationManager: NSObject, ObservableObject {
         super.init()
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        locationManager.requestWhenInUseAuthorization() //This one asks users permission
+        locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
     }
     
