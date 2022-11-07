@@ -47,6 +47,7 @@ struct MainView: View {
                 Spacer()
                 
                 MapCircle()
+                    .shadow(radius: 6)
                 
                 
                 Spacer()
