@@ -15,11 +15,18 @@ struct Header: View {
         
         HStack{
             //-----LOGO----
-            Text("PÄRON")
-                .font(.custom(
-                    "Spinnaker-Regular",
-                    fixedSize: 42))
-                .foregroundColor(Color(rgbDarkGreen));
+            
+            Button {
+                dbConnection.SignOut()
+            } label: {
+                Text("PÄRON")
+                    .font(.custom(
+                        "Spinnaker-Regular",
+                        fixedSize: 42))
+                    .foregroundColor(Color(rgbDarkGreen))
+            }
+
+        
             
             Spacer()
         

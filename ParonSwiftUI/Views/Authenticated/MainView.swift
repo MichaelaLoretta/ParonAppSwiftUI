@@ -31,15 +31,16 @@ struct MainView: View {
                     Header()
                     Spacer()
                     Button {
-                        dbConnection.SignOut()
+                        viewList.toggle()
                     } label: {
-                        Image(systemName: "cross")
-                            .font(.system(size: 30))
+                        Image(systemName: "list.bullet")
+                            .font(.system(size: 40))
+                            .foregroundColor(Color(rgbDarkBrown))
+                            .help("View On Map")
+                        
                     }
-
-                    
-                    
-                }.padding(.horizontal, 15)
+              
+                }.padding(.horizontal, 5)
                 
                 
                 
@@ -52,14 +53,6 @@ struct MainView: View {
                 
                 
                 BottomMenu()
-                
-                
-                Button(action: {
-                    viewList.toggle()
-                }, label: {
-                    Text("VIEW LIST").padding()
-                        .background(Color(rgbDarkGreen)).foregroundColor(.white).cornerRadius(9)
-                })
                 
                 
             }.padding(.horizontal, 5)

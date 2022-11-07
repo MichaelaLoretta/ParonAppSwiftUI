@@ -20,33 +20,45 @@ struct PlaygroundsListView: View {
     var body: some View {
         
         
-        ScrollView {
-            VStack{
-                Text("PLAYGROUNDS")
-                    .font(.custom(
-                        "Spinnaker-Regular",
-                        fixedSize: 30))
-                    .foregroundColor(Color(rgbDarkBrown))
-                    .padding(.vertical, 20)
-                
-                Spacer()
-                
-                ForEach(dbConnection.playgroundsList) { playground in
-                    cardView(playground: playground)
-                }
-                
-                Spacer()
-                
-                Button(action: {
-                    viewList.toggle()
-                }, label: {
-                    Text("View on list").padding().background(.black).foregroundColor(.white).cornerRadius(9)
-                })
-                
-                
+        ZStack(alignment: .center) {
+            LinearGradient(colors: [.white, Color(rgbPink)], startPoint: .topLeading, endPoint: .bottomTrailing)
+                .ignoresSafeArea()
+            
+            VStack {
+                HStack{
+                    Header()
+                    Spacer()
+                    Button {
+                        viewList.toggle()
+                    } label: {
+                        Image(systemName: "globe.europe.africa.fill")
+                            .font(.system(size: 40))
+                            .foregroundColor(Color(rgbDarkBrown))
+                            .help("View As List")
+                    }
+                }.padding(.horizontal, 10)
+                ScrollView {
+                    VStack{
+                        Text("PLAYGROUNDS")
+                            .font(.custom(
+                                "Spinnaker-Regular",
+                                fixedSize: 30))
+                            .foregroundColor(Color(rgbDarkGreen))
+                            .padding(.vertical, 20)
+                        
+                        Spacer()
+                        
+                        ForEach(dbConnection.playgroundsList) { playground in
+                            cardView(playground: playground)
+                        }
+                        
+                        Spacer()
+                        
+                        
+                    }
+                }.padding(.horizontal, 5)
             }
-        }.background(Color(rgbLightGreen))
-            .ignoresSafeArea()
+        }
         
     }
 }

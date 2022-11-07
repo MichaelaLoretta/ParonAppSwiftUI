@@ -14,26 +14,15 @@ struct BottomMenu: View {
             
             Image(systemName: "figure.play")
                 .font(.system(size: 50))
-//            Circle()
-//                .stroke(lineWidth: 2)
-//                .frame(width: 70)
-//                .foregroundColor(Color(rgbDarkGreen))
                 
             
             Image(systemName: "mouth")
                 .font(.system(size: 50))
-//            Circle()
-//                .stroke(lineWidth: 2)
-//                .frame(width: 70)
-//                .foregroundColor(Color(rgbDarkGreen))
+
             
             Image(systemName: "toilet")
                 .font(.system(size: 50))
-//            Circle()
-//                .stroke(lineWidth: 2)
-//                .frame(width: 70)
-//                .foregroundColor(Color(rgbDarkGreen))
-            
+
         }
         .padding(.bottom, 10)
         

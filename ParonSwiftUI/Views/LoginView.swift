@@ -27,8 +27,9 @@ struct LoginView: View {
                         HStack{
                             Header()
                             Spacer()
-                            Image(systemName: "questionmark")
+                            Image(systemName: "questionmark.circle.fill")
                                 .font(.system(size: 30))
+                                .foregroundColor(Color(rgbDarkBrown))
                             
                         }.padding(.horizontal, 15)
                         
