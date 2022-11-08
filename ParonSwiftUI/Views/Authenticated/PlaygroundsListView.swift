@@ -14,7 +14,7 @@ struct PlaygroundsListView: View {
     @EnvironmentObject var dbConnection: FirebaseManager
     @Binding var viewList: Bool
     
-    var playground = Playground.self
+    var playground : Playground
     
     
     var body: some View {
@@ -61,6 +61,7 @@ struct PlaygroundsListView: View {
         }
         
     }
+    
 }
         
 //

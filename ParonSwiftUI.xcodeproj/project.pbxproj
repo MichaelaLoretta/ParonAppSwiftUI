@@ -7,10 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4C846B7429111A880002805B /* RoundedCornerBg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C846B7329111A880002805B /* RoundedCornerBg.swift */; };
-		4C846B7629111EC20002805B /* RoundedShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C846B7529111EC20002805B /* RoundedShape.swift */; };
 		4C846B7B291127910002805B /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C846B7A291127900002805B /* LocationManager.swift */; };
-		4C846B7E29112C850002805B /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C846B7D29112C850002805B /* MapView.swift */; };
 		4C846B8529115F620002805B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C846B8429115F610002805B /* GoogleService-Info.plist */; };
 		4C9F8C4E291502B70033AE3B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9F8C4D291502B70033AE3B /* ContentView.swift */; };
 		4C9F8C51291506260033AE3B /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 4C9F8C50291506260033AE3B /* FirebaseAuth */; };
@@ -21,7 +18,8 @@
 		4C9F8C5B291506260033AE3B /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 4C9F8C5A291506260033AE3B /* FirebaseStorage */; };
 		4C9F8C5D291509BF0033AE3B /* Playground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9F8C5C291509BF0033AE3B /* Playground.swift */; };
 		4C9F8C6129150DB40033AE3B /* PlaygroundsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9F8C6029150DB40033AE3B /* PlaygroundsListView.swift */; };
-		4CAB2DB72919213B00BBE793 /* MapView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAB2DB62919213B00BBE793 /* MapView2.swift */; };
+		4CAB2DB72919213B00BBE793 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAB2DB62919213B00BBE793 /* MapView.swift */; };
+		4CAB2DB9291A6ED000BBE793 /* DestinationInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAB2DB8291A6ED000BBE793 /* DestinationInfoView.swift */; };
 		4CAC7BEE29169FD40084A9BD /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAC7BED29169FD40084A9BD /* CardView.swift */; };
 		4CDB14D1290A7F0900AFA3C3 /* ParonSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDB14D0290A7F0900AFA3C3 /* ParonSwiftUIApp.swift */; };
 		4CDB14D3290A7F0900AFA3C3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDB14D2290A7F0900AFA3C3 /* MainView.swift */; };
@@ -61,15 +59,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4C846B7329111A880002805B /* RoundedCornerBg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerBg.swift; sourceTree = "<group>"; };
-		4C846B7529111EC20002805B /* RoundedShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShape.swift; sourceTree = "<group>"; };
 		4C846B7A291127900002805B /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
-		4C846B7D29112C850002805B /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		4C846B8429115F610002805B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4C9F8C4D291502B70033AE3B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4C9F8C5C291509BF0033AE3B /* Playground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playground.swift; sourceTree = "<group>"; };
 		4C9F8C6029150DB40033AE3B /* PlaygroundsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundsListView.swift; sourceTree = "<group>"; };
-		4CAB2DB62919213B00BBE793 /* MapView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView2.swift; sourceTree = "<group>"; };
+		4CAB2DB62919213B00BBE793 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		4CAB2DB8291A6ED000BBE793 /* DestinationInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationInfoView.swift; sourceTree = "<group>"; };
 		4CAC7BED29169FD40084A9BD /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		4CDB14CD290A7F0900AFA3C3 /* ParonSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParonSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CDB14D0290A7F0900AFA3C3 /* ParonSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParonSwiftUIApp.swift; sourceTree = "<group>"; };
@@ -127,7 +123,6 @@
 		4C846B7729111EC90002805B /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				4C846B7529111EC20002805B /* RoundedShape.swift */,
 				4C9F8C5C291509BF0033AE3B /* Playground.swift */,
 			);
 			path = Models;
@@ -155,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				4C9F8C6029150DB40033AE3B /* PlaygroundsListView.swift */,
+				4CAB2DB8291A6ED000BBE793 /* DestinationInfoView.swift */,
 				4CDB14D2290A7F0900AFA3C3 /* MainView.swift */,
 			);
 			path = Authenticated;
@@ -228,8 +224,7 @@
 				4CDB1512290A8C2A00AFA3C3 /* Components */,
 				4C9F8C4C291501170033AE3B /* Authenticated */,
 				4C9F8C4B291500EC0033AE3B /* Unauthenticated */,
-				4C846B7D29112C850002805B /* MapView.swift */,
-				4CAB2DB62919213B00BBE793 /* MapView2.swift */,
+				4CAB2DB62919213B00BBE793 /* MapView.swift */,
 				4C9F8C4D291502B70033AE3B /* ContentView.swift */,
 			);
 			path = Views;
@@ -250,7 +245,6 @@
 				4CDB151C290D08D500AFA3C3 /* BottomMenu.swift */,
 				4CDB151E290D0A2E00AFA3C3 /* MapCircle.swift */,
 				4CDB1520290D0AE000AFA3C3 /* Header.swift */,
-				4C846B7329111A880002805B /* RoundedCornerBg.swift */,
 				4CAC7BED29169FD40084A9BD /* CardView.swift */,
 			);
 			path = Components;
@@ -408,22 +402,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CAB2DB72919213B00BBE793 /* MapView2.swift in Sources */,
+				4CAB2DB72919213B00BBE793 /* MapView.swift in Sources */,
 				4CF40D992912BB7300166E6F /* FirebaseManager.swift in Sources */,
 				4CDB14FC290A80A700AFA3C3 /* LoginView.swift in Sources */,
 				4C9F8C4E291502B70033AE3B /* ContentView.swift in Sources */,
 				4C9F8C6129150DB40033AE3B /* PlaygroundsListView.swift in Sources */,
 				4CEF36A7290EFBDF00460DD0 /* LaunchView.swift in Sources */,
 				4CDB14D3290A7F0900AFA3C3 /* MainView.swift in Sources */,
-				4C846B7429111A880002805B /* RoundedCornerBg.swift in Sources */,
 				4CDB151D290D08D500AFA3C3 /* BottomMenu.swift in Sources */,
 				4CDB1521290D0AE000AFA3C3 /* Header.swift in Sources */,
 				4CAC7BEE29169FD40084A9BD /* CardView.swift in Sources */,
 				4CDB14D1290A7F0900AFA3C3 /* ParonSwiftUIApp.swift in Sources */,
-				4C846B7E29112C850002805B /* MapView.swift in Sources */,
 				4CDB151F290D0A2E00AFA3C3 /* MapCircle.swift in Sources */,
 				4C9F8C5D291509BF0033AE3B /* Playground.swift in Sources */,
-				4C846B7629111EC20002805B /* RoundedShape.swift in Sources */,
+				4CAB2DB9291A6ED000BBE793 /* DestinationInfoView.swift in Sources */,
 				4CDB1514290A94CF00AFA3C3 /* ColorVariables.swift in Sources */,
 				4C846B7B291127910002805B /* LocationManager.swift in Sources */,
 			);
