@@ -44,12 +44,12 @@ struct PlaygroundsListView: View {
                                 "Spinnaker-Regular",
                                 fixedSize: 30))
                             .foregroundColor(Color(rgbDarkGreen))
-                            .padding(.vertical, 20)
+                            .padding(.vertical, 10)
                         
                         Spacer()
                         
                         ForEach(dbConnection.playgroundsList) { playground in
-                            cardView(playground: playground)
+                            CardView(playground: playground)
                         }
                         
                         Spacer()

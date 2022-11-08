@@ -14,7 +14,7 @@ struct Header: View {
     var body: some View {
         
         HStack{
-            //-----LOGO----
+         
             
             Button {
                 dbConnection.SignOut()

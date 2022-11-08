@@ -4,29 +4,31 @@
 //
 //  Created by Michaela Beyer on 2022-11-01.
 //
-
-import CoreLocation
+import Foundation
+import MapKit
 
 //Denna kollar användarens position samt frågar om lov.
 
-class LocationManager: NSObject, ObservableObject {
+class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
     
-   private let locationManager = CLLocationManager()
+    @Published var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 59.334591, longitude: 18.063240), span: MKCoordinateSpan(latitudeDelta: 0.12, longitudeDelta: 0.12))
+    
+   let manager = CLLocationManager()
+    var currentLocation: CLLocationCoordinate2D?
     
     override init() {
         super.init()
-        locationManager.delegate = self
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        locationManager.requestWhenInUseAuthorization()
-        locationManager.startUpdatingLocation()
+        manager.delegate = self
+        manager.desiredAccuracy = kCLLocationAccuracyBest
+        manager.requestWhenInUseAuthorization()
+        manager.startUpdatingLocation()
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        print("Din plats har uppdaterats")
+        currentLocation = locations.first?.coordinate
+        guard locations.isEmpty else {return}
+        manager.stopUpdatingLocation()
     }
     
 }
-
-extension LocationManager: CLLocationManagerDelegate {
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        guard locations.isEmpty else {return}
-        locationManager.stopUpdatingLocation()
-    }
-}
-

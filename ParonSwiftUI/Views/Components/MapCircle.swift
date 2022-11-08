@@ -10,13 +10,12 @@ import MapKit
 
 struct MapCircle: View {
 
-     
         
         var body: some View {
             
             
-           MapView()
-                .clipShape(Circle())
+           MapView2()
+                .body.clipShape(Circle())
             
 
                 

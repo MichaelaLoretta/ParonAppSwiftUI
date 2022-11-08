@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct cardView: View {
+struct CardView: View {
     
     var playground = Playground(id: "1", title: "Fruktparken", description: "Bra park", district: "Liljeholmen", imageUrl: "https://parker.stockholm/optimized/serviceunitspage/filer/hitta/e405ecce-c15e-46e8-baa2-5e4ecf66d72e.jpeg", web: "https://parker.stockholm/hitta-lekplatser-parklekar-plaskdammar/lekplats/fruktlekparken/", latitude: 59.311124985599996, longitude: 18.0222610271878)
     
@@ -18,21 +18,19 @@ struct cardView: View {
             
                 image.resizable().overlay(alignment: .bottomLeading, content: {
                     VStack (alignment: .leading) {
-                        Text(playground.title).bold().font(.title).foregroundColor(.white)
-                        Text(playground.district).font(.title).foregroundColor(.white)
+                        Text(playground.title).bold().font(.custom(
+                            "Spinnaker-Regular",
+                            fixedSize: 27)).foregroundColor(.white)
+                        Text(playground.district).font(.custom(
+                            "Spinnaker-Regular",
+                            fixedSize: 20)).foregroundColor(.white)
                     }.padding()
                 })
                         
                 
             }, placeholder: {
-                Text("Loading...").foregroundColor(.white)
+                Text("Please wait...").foregroundColor(.black)
                 
             }).frame(width: 325, height: 210).cornerRadius(15)
-    }
-}
-
-struct cardView_Previews: PreviewProvider {
-    static var previews: some View {
-        cardView(playground: Playground(id: "1", title: "FruktParken", description: "Bra park", district: "Liljeholmen", imageUrl: "https://parker.stockholm/optimized/serviceunitspage/filer/hitta/e405ecce-c15e-46e8-baa2-5e4ecf66d72e.jpeg", web: "https://parker.stockholm/hitta-lekplatser-parklekar-plaskdammar/lekplats/fruktlekparken/", latitude: 59.311124985599996, longitude: 18.0222610271878))
     }
 }

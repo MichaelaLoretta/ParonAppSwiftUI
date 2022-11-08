@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct MainView: View {
+    
     @EnvironmentObject var dbConnection: FirebaseManager
     
     @State var email = ""

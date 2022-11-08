@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-//Rounded Shape Component
+//Rounded Shape Component, currently unused in this project
 
 struct RoundedCornerBg: View {
     var body: some View {

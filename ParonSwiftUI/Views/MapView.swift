@@ -11,6 +11,7 @@ import MapKit
 struct MapView: UIViewRepresentable {
     
     let mapView = MKMapView()
+    
     let locationManager = LocationManager()
     
     func makeUIView(context: Context) -> some UIView {
@@ -23,7 +24,7 @@ struct MapView: UIViewRepresentable {
     }
     
     func updateUIView(_ uiView: UIViewType, context: Context) {
-        //code
+    
     }
     
     func makeCoordinator() -> MapCoordinator {

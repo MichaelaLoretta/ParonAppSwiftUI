@@ -21,7 +21,8 @@
 		4C9F8C5B291506260033AE3B /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 4C9F8C5A291506260033AE3B /* FirebaseStorage */; };
 		4C9F8C5D291509BF0033AE3B /* Playground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9F8C5C291509BF0033AE3B /* Playground.swift */; };
 		4C9F8C6129150DB40033AE3B /* PlaygroundsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9F8C6029150DB40033AE3B /* PlaygroundsListView.swift */; };
-		4CAC7BEE29169FD40084A9BD /* cardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAC7BED29169FD40084A9BD /* cardView.swift */; };
+		4CAB2DB72919213B00BBE793 /* MapView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAB2DB62919213B00BBE793 /* MapView2.swift */; };
+		4CAC7BEE29169FD40084A9BD /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAC7BED29169FD40084A9BD /* CardView.swift */; };
 		4CDB14D1290A7F0900AFA3C3 /* ParonSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDB14D0290A7F0900AFA3C3 /* ParonSwiftUIApp.swift */; };
 		4CDB14D3290A7F0900AFA3C3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDB14D2290A7F0900AFA3C3 /* MainView.swift */; };
 		4CDB14D5290A7F0B00AFA3C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CDB14D4290A7F0B00AFA3C3 /* Assets.xcassets */; };
@@ -68,7 +69,8 @@
 		4C9F8C4D291502B70033AE3B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4C9F8C5C291509BF0033AE3B /* Playground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playground.swift; sourceTree = "<group>"; };
 		4C9F8C6029150DB40033AE3B /* PlaygroundsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundsListView.swift; sourceTree = "<group>"; };
-		4CAC7BED29169FD40084A9BD /* cardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cardView.swift; sourceTree = "<group>"; };
+		4CAB2DB62919213B00BBE793 /* MapView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView2.swift; sourceTree = "<group>"; };
+		4CAC7BED29169FD40084A9BD /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		4CDB14CD290A7F0900AFA3C3 /* ParonSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParonSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CDB14D0290A7F0900AFA3C3 /* ParonSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParonSwiftUIApp.swift; sourceTree = "<group>"; };
 		4CDB14D2290A7F0900AFA3C3 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -227,6 +229,7 @@
 				4C9F8C4C291501170033AE3B /* Authenticated */,
 				4C9F8C4B291500EC0033AE3B /* Unauthenticated */,
 				4C846B7D29112C850002805B /* MapView.swift */,
+				4CAB2DB62919213B00BBE793 /* MapView2.swift */,
 				4C9F8C4D291502B70033AE3B /* ContentView.swift */,
 			);
 			path = Views;
@@ -248,7 +251,7 @@
 				4CDB151E290D0A2E00AFA3C3 /* MapCircle.swift */,
 				4CDB1520290D0AE000AFA3C3 /* Header.swift */,
 				4C846B7329111A880002805B /* RoundedCornerBg.swift */,
-				4CAC7BED29169FD40084A9BD /* cardView.swift */,
+				4CAC7BED29169FD40084A9BD /* CardView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -405,6 +408,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CAB2DB72919213B00BBE793 /* MapView2.swift in Sources */,
 				4CF40D992912BB7300166E6F /* FirebaseManager.swift in Sources */,
 				4CDB14FC290A80A700AFA3C3 /* LoginView.swift in Sources */,
 				4C9F8C4E291502B70033AE3B /* ContentView.swift in Sources */,
@@ -414,7 +418,7 @@
 				4C846B7429111A880002805B /* RoundedCornerBg.swift in Sources */,
 				4CDB151D290D08D500AFA3C3 /* BottomMenu.swift in Sources */,
 				4CDB1521290D0AE000AFA3C3 /* Header.swift in Sources */,
-				4CAC7BEE29169FD40084A9BD /* cardView.swift in Sources */,
+				4CAC7BEE29169FD40084A9BD /* CardView.swift in Sources */,
 				4CDB14D1290A7F0900AFA3C3 /* ParonSwiftUIApp.swift in Sources */,
 				4C846B7E29112C850002805B /* MapView.swift in Sources */,
 				4CDB151F290D0A2E00AFA3C3 /* MapCircle.swift in Sources */,
