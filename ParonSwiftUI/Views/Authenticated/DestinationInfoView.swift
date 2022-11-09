@@ -9,22 +9,41 @@ import SwiftUI
 
 struct DestinationInfoView: View {
     
+    
+    
     @EnvironmentObject var dbConnection: FirebaseManager
     
     var playground : Playground
     
     var body: some View {
-        ZStack{
-            VStack{
-                Text("HEJ")
-            }
-        }
+        
+        VStack(spacing: 5){
+            
+            AsyncImage(url: URL(string: playground.imageUrl), content: {
+                image in
+                
+                image.resizable().overlay(alignment: .bottomLeading, content: {
+                    VStack (alignment: .leading) {
+                        Text(playground.title).bold().font(.custom(
+                            "Spinnaker-Regular",
+                            fixedSize: 27)).foregroundColor(.white)
+                    }.padding()
+                })
+                
+            }, placeholder: {
+                Text("Please wait...").foregroundColor(.black)
+                
+            }).frame(width: 325, height: 210).cornerRadius(15)
+            
+            Text(playground.district)
+            Text(playground.description)
+                .padding(.bottom, 10)
+            Link("More info at the Official Website", destination: URL(string: playground.web)!)
+            
+        }.padding(15)
+        
     }
 }
 
-//struct DestinationInfoView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        DestinationInfoView( playground: Playground(id: "2", title: "Fruktparken", description: "bajskorv bajskorv bajskorv", district: "Liljeholmen", imageUrl: "https://parker.stockholm/optimized/serviceunitspage/filer/hitta/e405ecce-c15e-46e8-baa2-5e4ecf66d72e.jpeg", web: "https://parker.stockholm/hitta-lekplatser-parklekar-plaskdammar/lekplats/fruktlekparken/", latitude: 59.31112498559, longitude: 18.0222610271878)).environmentObject(FirebaseManager())
-//    }
-//}
+
 

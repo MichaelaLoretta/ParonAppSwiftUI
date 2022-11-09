@@ -37,26 +37,27 @@ struct BottomMenu: View {
             Text("PLAY")
                 .font(.custom(
                     "Spinnaker-Regular",
-                    fixedSize: 20))
+                    fixedSize: 18))
                 .foregroundColor(Color(rgbDarkBrown))
-                .padding(.leading, 25)
+                .padding(.leading, 23)
                 
             
             Text("FEED")
                 .font(.custom(
                     "Spinnaker-Regular",
-                    fixedSize: 20))
+                    fixedSize: 18))
                 .foregroundColor(Color(rgbDarkBrown))
                 .padding(.leading, 25)
             
             Text("DIAPER")
                 .font(.custom(
                     "Spinnaker-Regular",
-                    fixedSize: 20))
+                    fixedSize: 18))
                 .foregroundColor(Color(rgbDarkBrown))
                 
         
         }.padding(.horizontal, 20)
+         .padding(.bottom, 10)
             
         }
             

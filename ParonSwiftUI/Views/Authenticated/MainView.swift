@@ -15,7 +15,6 @@ struct MainView: View {
     @State var password = ""
     @State var viewList = false
     
-    
     var body: some View {
         
         ZStack(alignment: .center) {
@@ -49,7 +48,7 @@ struct MainView: View {
                 
                 MapCircle()
                     .shadow(radius: 6)
-                
+                  
                 
                 Spacer()
                 
@@ -60,7 +59,7 @@ struct MainView: View {
             }.padding(.horizontal, 5)
             
             if viewList {
-                PlaygroundsListView(viewList: $viewList, playground: Playground(id: "2", title: "Fruktparken", description: "bajskorv bajskorv bajskorv", district: "Liljeholmen", imageUrl: "https://parker.stockholm/optimized/serviceunitspage/filer/hitta/e405ecce-c15e-46e8-baa2-5e4ecf66d72e.jpeg", web: "https://parker.stockholm/hitta-lekplatser-parklekar-plaskdammar/lekplats/fruktlekparken/", latitude: 59.31112498559, longitude: 18.0222610271878)).environmentObject(FirebaseManager())
+                PlaygroundsListView(viewList: $viewList)
             }
             
             
@@ -76,11 +75,3 @@ struct MainView: View {
     }
     
     
-
-
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        MainView()
-    }
-}

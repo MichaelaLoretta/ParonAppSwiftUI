@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CardView: View {
     
-    var playground = Playground(id: "1", title: "Fruktparken", description: "Bra park", district: "Liljeholmen", imageUrl: "https://parker.stockholm/optimized/serviceunitspage/filer/hitta/e405ecce-c15e-46e8-baa2-5e4ecf66d72e.jpeg", web: "https://parker.stockholm/hitta-lekplatser-parklekar-plaskdammar/lekplats/fruktlekparken/", latitude: 59.311124985599996, longitude: 18.0222610271878)
+    var playground: Playground
     
     var body: some View {
         

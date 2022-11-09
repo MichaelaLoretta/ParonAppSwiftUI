@@ -17,6 +17,7 @@ class FirebaseManager: ObservableObject {
     @Published var userLoggedIn = false
     @Published var currentUser: User?
     @Published var loginStatusMessage = ""
+  
     
     private var playgroundsListener: ListenerRegistration?
     

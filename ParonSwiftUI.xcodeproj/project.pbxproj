@@ -224,7 +224,6 @@
 				4CDB1512290A8C2A00AFA3C3 /* Components */,
 				4C9F8C4C291501170033AE3B /* Authenticated */,
 				4C9F8C4B291500EC0033AE3B /* Unauthenticated */,
-				4CAB2DB62919213B00BBE793 /* MapView.swift */,
 				4C9F8C4D291502B70033AE3B /* ContentView.swift */,
 			);
 			path = Views;
@@ -242,6 +241,7 @@
 		4CDB1512290A8C2A00AFA3C3 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				4CAB2DB62919213B00BBE793 /* MapView.swift */,
 				4CDB151C290D08D500AFA3C3 /* BottomMenu.swift */,
 				4CDB151E290D0A2E00AFA3C3 /* MapCircle.swift */,
 				4CDB1520290D0AE000AFA3C3 /* Header.swift */,
