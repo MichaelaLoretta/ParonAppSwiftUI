@@ -30,11 +30,11 @@ struct PlaygroundsListView: View {
                         viewList.toggle()
                     } label: {
                         Image(systemName: "globe.europe.africa.fill")
-                            .font(.system(size: 40))
+                            .font(.system(size: 30))
                             .foregroundColor(Color(rgbDarkBrown))
                             .help("View As List")
                     }
-                }.padding(.horizontal, 10)
+                }.padding(.horizontal, 20)
                 ScrollView {
                     VStack{
                         Text("PLAYGROUNDS")
@@ -54,7 +54,7 @@ struct PlaygroundsListView: View {
                         
                         
                     }
-                }.padding(.horizontal, 5)
+                }.padding(.horizontal, 10)
             }
         }
         

@@ -22,7 +22,7 @@ struct ContentView: View {
             
             if dbConnection.userLoggedIn {
                 NavigationStack {
-                    MainView()
+                    MapView()
                 }
             } else if !isActive {
                         

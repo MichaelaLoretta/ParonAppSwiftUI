@@ -14,7 +14,7 @@ struct LoginView: View {
     
     @State var email = ""
     @State var password = ""
-
+    @State var gotQuestions = false
 
     var body: some View {
         
@@ -27,11 +27,20 @@ struct LoginView: View {
                         HStack{
                             Header()
                             Spacer()
-                            Image(systemName: "questionmark.circle.fill")
-                                .font(.system(size: 30))
-                                .foregroundColor(Color(rgbDarkBrown))
                             
-                        }.padding(.horizontal, 15)
+                            Button {
+                                gotQuestions.toggle()
+                            } label: {
+                                Image(systemName: "questionmark.circle.fill")
+                                    .font(.system(size: 30))
+                                    .foregroundColor(Color(rgbDarkBrown))
+                                    .help("Got Questions")
+                                
+                            }
+                           
+
+                            
+                        }.padding(.horizontal, 20)
                         
                         Spacer()
                         Text("WELCOME IN!")
@@ -109,10 +118,14 @@ struct LoginView: View {
                      
                         
                         
-                    }
+                    }.padding(.horizontal, 10)
                     
-            
+                if gotQuestions {
+                    AboutView(gotQuestions: $gotQuestions)
+                    
             }
+       
+        }
         }
         
     }

@@ -11,6 +11,7 @@ struct Header: View {
     
     @EnvironmentObject var dbConnection: FirebaseManager
     
+    
     var body: some View {
         
         HStack{
@@ -30,6 +31,9 @@ struct Header: View {
             
             Spacer()
         
+           
+            }
+            
             
             //----HAMBURGER MENU----
             
@@ -48,5 +52,5 @@ struct Header: View {
         }
         
     }
-}
+
 

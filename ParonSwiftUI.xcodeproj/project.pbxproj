@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C71E6D7291D0E0300CEFE48 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C71E6D6291D0E0300CEFE48 /* AboutView.swift */; };
 		4C846B7B291127910002805B /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C846B7A291127900002805B /* LocationManager.swift */; };
 		4C846B8529115F620002805B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C846B8429115F610002805B /* GoogleService-Info.plist */; };
 		4C9F8C4E291502B70033AE3B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9F8C4D291502B70033AE3B /* ContentView.swift */; };
@@ -18,11 +19,10 @@
 		4C9F8C5B291506260033AE3B /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 4C9F8C5A291506260033AE3B /* FirebaseStorage */; };
 		4C9F8C5D291509BF0033AE3B /* Playground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9F8C5C291509BF0033AE3B /* Playground.swift */; };
 		4C9F8C6129150DB40033AE3B /* PlaygroundsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9F8C6029150DB40033AE3B /* PlaygroundsListView.swift */; };
-		4CAB2DB72919213B00BBE793 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAB2DB62919213B00BBE793 /* MapView.swift */; };
 		4CAB2DB9291A6ED000BBE793 /* DestinationInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAB2DB8291A6ED000BBE793 /* DestinationInfoView.swift */; };
 		4CAC7BEE29169FD40084A9BD /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAC7BED29169FD40084A9BD /* CardView.swift */; };
 		4CDB14D1290A7F0900AFA3C3 /* ParonSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDB14D0290A7F0900AFA3C3 /* ParonSwiftUIApp.swift */; };
-		4CDB14D3290A7F0900AFA3C3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDB14D2290A7F0900AFA3C3 /* MainView.swift */; };
+		4CDB14D3290A7F0900AFA3C3 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDB14D2290A7F0900AFA3C3 /* MapView.swift */; };
 		4CDB14D5290A7F0B00AFA3C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CDB14D4290A7F0B00AFA3C3 /* Assets.xcassets */; };
 		4CDB14D8290A7F0B00AFA3C3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CDB14D7290A7F0B00AFA3C3 /* Preview Assets.xcassets */; };
 		4CDB14E2290A7F0B00AFA3C3 /* ParonSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDB14E1290A7F0B00AFA3C3 /* ParonSwiftUITests.swift */; };
@@ -33,7 +33,6 @@
 		4CDB1515290A94CF00AFA3C3 /* ColorVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDB1513290A94CF00AFA3C3 /* ColorVariables.swift */; };
 		4CDB1516290A94CF00AFA3C3 /* ColorVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDB1513290A94CF00AFA3C3 /* ColorVariables.swift */; };
 		4CDB151D290D08D500AFA3C3 /* BottomMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDB151C290D08D500AFA3C3 /* BottomMenu.swift */; };
-		4CDB151F290D0A2E00AFA3C3 /* MapCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDB151E290D0A2E00AFA3C3 /* MapCircle.swift */; };
 		4CDB1521290D0AE000AFA3C3 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDB1520290D0AE000AFA3C3 /* Header.swift */; };
 		4CEF36A7290EFBDF00460DD0 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEF36A6290EFBDF00460DD0 /* LaunchView.swift */; };
 		4CF1CBD929116B650015C656 /* Spinnaker-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CF1CBD729116B640015C656 /* Spinnaker-Regular.ttf */; };
@@ -59,17 +58,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C71E6D6291D0E0300CEFE48 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		4C846B7A291127900002805B /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		4C846B8429115F610002805B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4C9F8C4D291502B70033AE3B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4C9F8C5C291509BF0033AE3B /* Playground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playground.swift; sourceTree = "<group>"; };
 		4C9F8C6029150DB40033AE3B /* PlaygroundsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundsListView.swift; sourceTree = "<group>"; };
-		4CAB2DB62919213B00BBE793 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		4CAB2DB8291A6ED000BBE793 /* DestinationInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationInfoView.swift; sourceTree = "<group>"; };
 		4CAC7BED29169FD40084A9BD /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		4CDB14CD290A7F0900AFA3C3 /* ParonSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParonSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CDB14D0290A7F0900AFA3C3 /* ParonSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParonSwiftUIApp.swift; sourceTree = "<group>"; };
-		4CDB14D2290A7F0900AFA3C3 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		4CDB14D2290A7F0900AFA3C3 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		4CDB14D4290A7F0B00AFA3C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CDB14D7290A7F0B00AFA3C3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4CDB14DD290A7F0B00AFA3C3 /* ParonSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParonSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,7 +80,6 @@
 		4CDB1511290A8B7F00AFA3C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		4CDB1513290A94CF00AFA3C3 /* ColorVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorVariables.swift; sourceTree = "<group>"; };
 		4CDB151C290D08D500AFA3C3 /* BottomMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomMenu.swift; sourceTree = "<group>"; };
-		4CDB151E290D0A2E00AFA3C3 /* MapCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCircle.swift; sourceTree = "<group>"; };
 		4CDB1520290D0AE000AFA3C3 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
 		4CEF36A6290EFBDF00460DD0 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 		4CF1CBD729116B640015C656 /* Spinnaker-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Spinnaker-Regular.ttf"; path = "../../../../../Downloads/Spinnaker/Spinnaker-Regular.ttf"; sourceTree = "<group>"; };
@@ -140,6 +138,7 @@
 		4C9F8C4B291500EC0033AE3B /* Unauthenticated */ = {
 			isa = PBXGroup;
 			children = (
+				4C71E6D6291D0E0300CEFE48 /* AboutView.swift */,
 				4CDB14FB290A80A700AFA3C3 /* LoginView.swift */,
 				4CEF36A6290EFBDF00460DD0 /* LaunchView.swift */,
 			);
@@ -151,7 +150,7 @@
 			children = (
 				4C9F8C6029150DB40033AE3B /* PlaygroundsListView.swift */,
 				4CAB2DB8291A6ED000BBE793 /* DestinationInfoView.swift */,
-				4CDB14D2290A7F0900AFA3C3 /* MainView.swift */,
+				4CDB14D2290A7F0900AFA3C3 /* MapView.swift */,
 			);
 			path = Authenticated;
 			sourceTree = "<group>";
@@ -241,9 +240,7 @@
 		4CDB1512290A8C2A00AFA3C3 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				4CAB2DB62919213B00BBE793 /* MapView.swift */,
 				4CDB151C290D08D500AFA3C3 /* BottomMenu.swift */,
-				4CDB151E290D0A2E00AFA3C3 /* MapCircle.swift */,
 				4CDB1520290D0AE000AFA3C3 /* Header.swift */,
 				4CAC7BED29169FD40084A9BD /* CardView.swift */,
 			);
@@ -402,18 +399,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CAB2DB72919213B00BBE793 /* MapView.swift in Sources */,
 				4CF40D992912BB7300166E6F /* FirebaseManager.swift in Sources */,
 				4CDB14FC290A80A700AFA3C3 /* LoginView.swift in Sources */,
 				4C9F8C4E291502B70033AE3B /* ContentView.swift in Sources */,
 				4C9F8C6129150DB40033AE3B /* PlaygroundsListView.swift in Sources */,
+				4C71E6D7291D0E0300CEFE48 /* AboutView.swift in Sources */,
 				4CEF36A7290EFBDF00460DD0 /* LaunchView.swift in Sources */,
-				4CDB14D3290A7F0900AFA3C3 /* MainView.swift in Sources */,
+				4CDB14D3290A7F0900AFA3C3 /* MapView.swift in Sources */,
 				4CDB151D290D08D500AFA3C3 /* BottomMenu.swift in Sources */,
 				4CDB1521290D0AE000AFA3C3 /* Header.swift in Sources */,
 				4CAC7BEE29169FD40084A9BD /* CardView.swift in Sources */,
 				4CDB14D1290A7F0900AFA3C3 /* ParonSwiftUIApp.swift in Sources */,
-				4CDB151F290D0A2E00AFA3C3 /* MapCircle.swift in Sources */,
 				4C9F8C5D291509BF0033AE3B /* Playground.swift in Sources */,
 				4CAB2DB9291A6ED000BBE793 /* DestinationInfoView.swift in Sources */,
 				4CDB1514290A94CF00AFA3C3 /* ColorVariables.swift in Sources */,
