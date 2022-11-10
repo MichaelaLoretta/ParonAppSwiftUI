@@ -15,23 +15,23 @@ struct BottomMenu: View {
             
             
             
-                Image(systemName: "figure.play")
-                    .font(.system(size: 50))
-               
+            Image(systemName: "figure.play")
+                .font(.system(size: 50))
             
             
             
             
-                Image(systemName: "mouth")
-                    .font(.system(size: 50))
-              
             
-          
+            Image(systemName: "mouth")
+                .font(.system(size: 50))
             
-                Image(systemName: "toilet")
-                    .font(.system(size: 50))
-               
-            }
+            
+            
+            
+            Image(systemName: "toilet")
+                .font(.system(size: 50))
+            
+        }
         HStack(spacing: 50){
             
             Text("PLAY")
@@ -40,7 +40,7 @@ struct BottomMenu: View {
                     fixedSize: 18))
                 .foregroundColor(Color(rgbDarkBrown))
                 .padding(.leading, 23)
-                
+            
             
             Text("FEED")
                 .font(.custom(
@@ -54,15 +54,15 @@ struct BottomMenu: View {
                     "Spinnaker-Regular",
                     fixedSize: 18))
                 .foregroundColor(Color(rgbDarkBrown))
-                
-        
+            
+            
         }.padding(.horizontal, 20)
-         .padding(.bottom, 10)
-            
-        }
-            
+            .padding(.bottom, 10)
         
     }
+    
+    
+}
 
 
 struct BottomMenu_Previews: PreviewProvider {

@@ -17,7 +17,7 @@ class FirebaseManager: ObservableObject {
     @Published var userLoggedIn = false
     @Published var currentUser: User?
     @Published var loginStatusMessage = ""
-  
+    
     
     private var playgroundsListener: ListenerRegistration?
     
@@ -97,7 +97,7 @@ class FirebaseManager: ObservableObject {
         }
     }
     
-
+    
     func loginUser(email : String, password : String){
         Auth.auth().signIn(withEmail: email, password: password){
             result, error in

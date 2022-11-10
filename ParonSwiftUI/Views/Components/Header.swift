@@ -15,7 +15,7 @@ struct Header: View {
     var body: some View {
         
         HStack{
-         
+            
             
             Button {
                 dbConnection.SignOut()
@@ -26,31 +26,31 @@ struct Header: View {
                         fixedSize: 42))
                     .foregroundColor(Color(rgbDarkGreen))
             }
-
-        
+            
+            
             
             Spacer()
-        
-           
-            }
             
             
-            //----HAMBURGER MENU----
-            
-//            VStack{
-//                Rectangle()
-//                    .frame(width: 30,height: 2)
-//                    .foregroundColor(Color(rgbDarkBrown))
-//                Rectangle()
-//                    .frame(width: 30,height: 2)
-//                    .foregroundColor(Color(rgbDarkBrown))
-//                Rectangle()
-//                    .frame(width: 30,height: 2)
-//                    .foregroundColor(Color(rgbDarkBrown))
-//            }
-//
         }
         
+        
+        //----HAMBURGER MENU----
+        
+        //            VStack{
+        //                Rectangle()
+        //                    .frame(width: 30,height: 2)
+        //                    .foregroundColor(Color(rgbDarkBrown))
+        //                Rectangle()
+        //                    .frame(width: 30,height: 2)
+        //                    .foregroundColor(Color(rgbDarkBrown))
+        //                Rectangle()
+        //                    .frame(width: 30,height: 2)
+        //                    .foregroundColor(Color(rgbDarkBrown))
+        //            }
+        //
     }
+    
+}
 
 

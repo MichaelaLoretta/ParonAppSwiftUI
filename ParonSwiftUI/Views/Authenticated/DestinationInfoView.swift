@@ -24,9 +24,9 @@ struct DestinationInfoView: View {
                 
                 image.resizable().overlay(alignment: .bottomLeading, content: {
                     VStack (alignment: .leading) {
-                        Text(playground.title).bold().font(.custom(
+                        Text(playground.title).font(.custom(
                             "Spinnaker-Regular",
-                            fixedSize: 27)).foregroundColor(.white)
+                            fixedSize: 22)).foregroundColor(.white)
                     }.padding()
                 })
                 

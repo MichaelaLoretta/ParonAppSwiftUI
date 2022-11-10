@@ -16,18 +16,18 @@ struct AboutView: View {
             LinearGradient(colors: [.white, Color(rgbPink)], startPoint: .topLeading, endPoint: .bottomTrailing)
                 .ignoresSafeArea()
             
-        
-        VStack(spacing: 24){
-            Text("Got Questions?").font(.title)
             
-            Text("PÄRON APP")
-                .font(.custom(
-                    "Spinnaker-Regular",
-                    fixedSize: 27))
-                .foregroundColor(Color(rgbDarkGreen))
-            
-            Text("Is a handy map for parents of babys and toddlers, that can help find nearby playgrounds, feeding stations or changing tables.")
-        }.padding(27)
+            VStack(spacing: 24){
+                Text("Got Questions?").font(.title)
+                
+                Text("PÄRON APP")
+                    .font(.custom(
+                        "Spinnaker-Regular",
+                        fixedSize: 35))
+                    .foregroundColor(Color(rgbDarkGreen))
+                
+                Text("Is a handy map for parents of babys and toddlers, that can help find nearby playgrounds, feeding stations or changing tables.")
+            }.padding(27)
                 .overlay(
                     RoundedRectangle(cornerRadius: 20)
                         .stroke(Color(rgbDarkGreen), lineWidth: 5)
@@ -39,5 +39,5 @@ struct AboutView: View {
             
         }
     }
-    }
+}
 

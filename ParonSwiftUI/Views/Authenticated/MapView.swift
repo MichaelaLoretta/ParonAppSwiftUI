@@ -84,7 +84,7 @@ struct MapView: View {
                 }
                 .clipShape(Circle())
                 .shadow(radius: 6)
-                .overlay(alignment: .bottom) {
+                .overlay() {
                     if let selectedPlayground = selectedPlayground {
                         
                         ZStack{
@@ -119,7 +119,7 @@ struct MapView: View {
             }.padding(.horizontal, 10)
             
             if viewList {
-                PlaygroundsListView(viewList: $viewList)
+                DestinationListView(viewList: $viewList)
             }
         }
         
@@ -127,5 +127,5 @@ struct MapView: View {
     }
     
 }
-    
-    
+
+

@@ -33,44 +33,44 @@ struct LaunchView: View {
                         .resizable()
                         .scaledToFit()
                         .frame(width: 100)
-                         .scaleEffect(size)
-                         .opacity(opacity)
-                          .onAppear{
-                              withAnimation(.easeIn(duration: 2.5)) {
-                                  self.size = 17.0
-                                  self.opacity = 1.0
-                                                }
-                }.edgesIgnoringSafeArea(.all)
-                
-                
-                
-                
-                
-                
-                Text("PÄRON")
-                    .font(.custom(
-                        "Spinnaker-Regular",
-                        fixedSize: 50))
-                    .foregroundColor(Color(rgbPink))
-            }
+                        .scaleEffect(size)
+                        .opacity(opacity)
+                        .onAppear{
+                            withAnimation(.easeIn(duration: 2.5)) {
+                                self.size = 17.0
+                                self.opacity = 1.0
+                            }
+                        }.edgesIgnoringSafeArea(.all)
+                    
+                    
+                    
+                    
+                    
+                    
+                    Text("PÄRON")
+                        .font(.custom(
+                            "Spinnaker-Regular",
+                            fixedSize: 50))
+                        .foregroundColor(Color(rgbPink))
+                }
             }.onAppear{
                 DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
                     self.isActive = false
-            
-        
-        }
-        
-        
+                    
+                    
+                }
+                
+                
             }
         }
-
+        
     }
-
-}
     
-    struct LaunchView_Previews: PreviewProvider {
-        static var previews: some View {
-            LaunchView()
-        }
+}
+
+struct LaunchView_Previews: PreviewProvider {
+    static var previews: some View {
+        LaunchView()
     }
+}
 

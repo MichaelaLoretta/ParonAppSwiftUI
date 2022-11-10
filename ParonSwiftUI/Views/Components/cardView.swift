@@ -14,23 +14,28 @@ struct CardView: View {
     var body: some View {
         
         AsyncImage(url: URL(string: playground.imageUrl), content: {
-                image in
+            image in
             
-                image.resizable().overlay(alignment: .bottomLeading, content: {
-                    VStack (alignment: .leading) {
-                        Text(playground.title).bold().font(.custom(
-                            "Spinnaker-Regular",
-                            fixedSize: 27)).foregroundColor(.white)
-                        Text(playground.district).font(.custom(
-                            "Spinnaker-Regular",
-                            fixedSize: 20)).foregroundColor(.white)
-                    }.padding()
-                })
-                        
-                
-            }, placeholder: {
-                Text("Please wait...").foregroundColor(.black)
-                
-            }).frame(width: 325, height: 210).cornerRadius(15)
+            image.resizable().overlay(alignment: .bottomLeading, content: {
+                VStack(alignment: .leading){
+                    
+                    Text(playground.title)
+                        .fontWeight(.heavy)
+                        .foregroundColor(.white)
+                        .font(.system(size: 20))
+                    
+                    
+                    Text(playground.district).bold()
+                        .foregroundColor(.white)
+                        .font(.system(size: 15))
+                    
+                }.padding()
+            })
+            
+            
+        }, placeholder: {
+            Text("Please wait...").foregroundColor(.black)
+            
+        }).frame(width: 325, height: 210).cornerRadius(15)
     }
 }
